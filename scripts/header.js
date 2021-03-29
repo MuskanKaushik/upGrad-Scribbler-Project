@@ -20,10 +20,10 @@ signinbtn.onclick = function() {
 // Get  Sign up modal
 var signup = document.getElementById('signUpModal');
 
-// Get signup button that opens the modal
+//signup button that opens the modal
 var signupbtn = document.getElementById("signUp");
 
-// close the modal
+// close modal
 var signupSpan = document.getElementById("signUpClose");
 
 // click on the btn and sign up modal opens
@@ -36,7 +36,7 @@ signupSpan.onclick = function() {
     signup.style.display = "none";
 }
 
-// Whenever you click anywhere outside of the modal it closes
+// Click anywhere outside of the modal and it closes
 window.onclick = function(event) {
     if (event.target == signup) {
       signup.style.display = "none";
@@ -46,7 +46,6 @@ window.onclick = function(event) {
     }
  }
  
-// click when user is not a member and it will redirect to sign up screen
 function signUp() {
     signin.style.display = "none";
     signup.style.display = "block";
